@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a80a9def81.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>I LOVE YOU</title>
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+ .allin {
+    text-align: center;
+    max-width: 1500px;
+ }
+.tongthecon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main1 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.main2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 50px;
+} 
+#co {
+    position: absolute;
+}
+#khong {
+    position: absolute;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.tongthe{
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    padding-top: 150px ;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+}
+
+.form {
+    text-align: center;
+    position: fixed;
+    top: -100%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 50px;
+    z-index: 1000;
+    transition: 0.5s all ease-in-out;
+    animation: animation 10s infinite;
+  }
+@keyframes animation {
+  0% {
+    background-color: #FBB03B;
+  }
+  25% {
+    background-color: #ed6ea0;
+  }
+  50% {
+    background-color: #f7186a;
+  }
+  75% {
+    background-color: #ec8c69;
+  }
+  100% {
+    background-color: #FBB03B;
+  }
+}
+.form p {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.form #formnhap {
+    padding: 20px;
+    width: 70%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.fa-beat {
+  animation:fa-beat 4s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.5);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.5);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.5);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
+#heart {
+  color:rgb(255, 255, 255);
+}
+#accept {
+  margin-top: 30px;
+  padding: 0px 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.endgame {
+  position: fixed;
+  top: -100%;
+  left: 0%;
+  background-color: #f7186a;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.traitim {
+  display: flex;
+  padding: 0px 20px;
+}
+#formnhap {
+  border: 0px;
+}
+.thongdiep {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+</style>
+<script src="./main.js" >    
+</script>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./stock-footage-abstract-animated-stained-background-seamless-loop-video-watercolor-effect-cute-baby-pink-blue (online-video-cutter.com).mp4" type="video/mp4">
+    </video>
+    
+    <div class="allin">
+        <div class="tongthe">
+            <div class="Question">
+                <p>THÍCH TUI LẮM ĐÚNG HONGGGGGGGGGGGG ?</p>
+            </div>
+            <div class="tongthecon">
+                <div class="main1">
+                    <button id="co" class="btn-hover color-10" onclick="test()"  >ĐÚNG ỜI</button>
+                </div>
+                <div class="main2">
+                    <button class="btn-hover color-10" id="khong" onclick="troll()" >HONGGG</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="form" id="form-enter">
+        <p>ANH THẤY TUI THẾ NÀO :)))</p>    
+        <p id="heart">
+            <i class="fa fa-heart fa-4x fa-beat"></i>
+          </p>
+        <input id="formnhap" type="text" placeholder="Tại vì ......." value="" size="30" style="font-size:20px ;">
+        <div class="invail">
+          <button id="accept" class="btn-hover color-3" onclick="test2()" >GỬI LÝ DO</button>
+        </div>
+        <div class="ans">
+          <button id="accept" class="btn-hover color-2" onclick="test1()" >XÁC NHẬN</button>
+        </div>
+    </section>
+    <section class="endgame">
+      <div class="traitim">
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+      </div>
+      <div class="thongdiep">
+      <p>ngại quá nhưng mà tui hong thích anh đâu nha </p>
+      </div>
+      <div class="traitim">
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+        <p id="heart">
+          <i class="fa fa-heart fa-4x fa-beat"></i>
+        </p>
+      </div>
+    </section>
+</body>
+</html> 
